@@ -4,7 +4,7 @@ import static java.lang.Math.abs;
 
 public class AssignmentOne{
     public static void main(String[] args){
-        scenarioTwo();
+        scenarioThree();
     }
 
     //A function that prompts the user for integers and then prints out the integers
@@ -42,5 +42,20 @@ public class AssignmentOne{
 
         System.out.println("The factorial number would be: " + factorialNum);
         sc.close();
+    }
+
+    //A function that asks the user for 2 integers and then checks if their product is divisible by 5.
+    public static void scenarioThree(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter 2 integers!");
+        int intOne = sc.nextInt();
+        int intTwo = sc.nextInt();
+        sc.close();
+        if((intOne*intTwo)%5 == 0){
+            System.out.println("The product is divisible by 5!  : 1");
+        }
+        else{
+            System.out.println("The product is NOT divisible by 5!  : 0");
+        }
     }
 }
