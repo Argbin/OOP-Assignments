@@ -34,7 +34,7 @@ public class AssignmentOne{
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter a number!");
         int input = abs(sc.nextInt());
-        int factorialNum = 1;
+        int factorialNum = input == 0 ?  0 : 1;
 
         for(int i = input; i > 1; i--){
             factorialNum *= i;
