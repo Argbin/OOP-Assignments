@@ -24,5 +24,7 @@ public class AssignmentOne{
         for(int number : v){
             System.out.println(number);
         }
+
+        sc.close();
     }
 }
