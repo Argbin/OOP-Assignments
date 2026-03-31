@@ -4,7 +4,7 @@ import static java.lang.Math.abs;
 
 public class AssignmentOne{
     public static void main(String[] args){
-        scenarioThree();
+        scenarioFour(2,3,5,6);
     }
 
     //A function that prompts the user for integers and then prints out the integers
@@ -58,4 +58,17 @@ public class AssignmentOne{
             System.out.println("The product is NOT divisible by 5!  : 0");
         }
     }
+
+    public static void scenarioFour(int n1, int d1, int n2, int d2){
+        int newDenominator = d1 * d2;
+        int newNumerator = n1*d2 + n2*d1;
+        double decimalValue = (double)newNumerator / newDenominator;
+        System.out.println(newNumerator + " / " + newDenominator + " = " + decimalValue);
+    }
 }
+
+
+
+
+
+
