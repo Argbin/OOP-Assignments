@@ -1,10 +1,11 @@
 import java.util.Scanner;
 import java.util.Vector;
 import static java.lang.Math.abs;
+import java.util.Arrays;
 
 public class AssignmentOne{
     public static void main(String[] args){
-        scenarioFour(2,3,5,6);
+
     }
 
     //A function that prompts the user for integers and then prints out the integers
@@ -64,6 +65,14 @@ public class AssignmentOne{
         int newNumerator = n1*d2 + n2*d1;
         double decimalValue = (double)newNumerator / newDenominator;
         System.out.println(newNumerator + " / " + newDenominator + " = " + decimalValue);
+    }
+
+    public static int[] scenarioFive(int[] numbers){
+        int[] reverseArr = new int[numbers.length];
+        for(int i = numbers.length-1; i >= 0; i--){
+            reverseArr[numbers.length-1-i] = numbers[i];
+        }
+        return reverseArr;
     }
 }
 
